@@ -70,6 +70,11 @@ a.navbar-item.is-active {
     letter-spacing: 0.25rem;
 }
 
+ .max-width-iframe {
+     max-width: 800px; /* Maksimum genişlik değerini istediğiniz değerle değiştirin */
+     margin: 0 auto; /* İçeriği merkezlemek için */
+ }
+
 #about {
     .image {
         max-width: 20vmax;
