@@ -5,30 +5,10 @@
 
 #navbar {
     opacity: 0.95;
-    height: 80px;
 }
 
 .is-active {
-   
-}
-.navbar-item2 {
-    /* Stil özelliklerini buraya ekleyin */
-    font-size: 16px;
-    color: #333;
-    /* Diğer özellikler... */
-}
-
-.navbar-item2:hover {
-    /* Fare hover durumunda uygulanacak stil özellikleri */
-    color: #555;
-    /* Diğer özellikler... */
-}
-
-/* Özel durumlar için örneğin "aktif" durumu */
-.navbar-item2.is-active {
-    /* Aktif durumda uygulanacak stil özellikleri */
-    font-weight: bold;
-    /* Diğer özellikler... */
+    font-weight: 600;
 }
 
 .navbar-dropdown {
@@ -36,24 +16,30 @@
     right: 0;
     left: auto;
 }
-
-a.navbar-item:hover,
-.navbar-link:hover {
-
-}
-
-a.navbar-item.is-active {
- 
-
-}
-
-.navbar-link:not(.is-arrowless)::after {
-
-}
-
 .navbar-brand {
     font-size: xx-large;
 }
+a.navbar-item:hover,
+.navbar-link:hover {
+    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    color: white !important;
+}
+
+a.navbar-item.is-active {
+    background-color: rgba($color: #fff, $alpha: 0.25) !important;
+    color: white !important;
+
+    &:hover {
+        background-color: rgba($color: #fff, $alpha: 0.25) !important;
+        color: grey;
+    }
+}
+
+.navbar-link:not(.is-arrowless)::after {
+    border-color: grey;
+}
+
+
 #hero {
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
